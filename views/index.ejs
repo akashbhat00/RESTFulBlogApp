@@ -1,0 +1,10 @@
+<% include ./partials/header.ejs %>
+<h1> This is a blog app!!!! </h1>
+<%= console.log(blogs); %>
+    <% blogs.forEach(function (blog) => { %>
+        <div> 
+            <h1><%= blog.title %> </h1>
+            <h1><%= blog.body %> </h1>
+        </div>    
+    <% }); %>
+<% include ./partials/footer.ejs %>
